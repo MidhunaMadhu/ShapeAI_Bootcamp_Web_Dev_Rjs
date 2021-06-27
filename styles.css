@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+}
+
+header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* margin: auto -16px; */
+  padding: 20px 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: orange;
+  font-family: Lucida Handwriting;
+  font-weight: 200;
+}
+
+footer {
+  position: relative;
+
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container:first-child {
+  margin-top: 8%;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px black;
+  padding: 15px;
+  width: 240px;
+  margin: 16px;
+
+  display: inline-block;
+}
+.note h1 {
+  font-size: 1.5em;
+  margin-bottom: 7px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(15, 1, 1);
+}
+.note p::first-letter {
+  text-transform: uppercase;
+}
+
+.icon .like {
+  font-size: 0.85em;
+  color: #ccc;
+  /* margin-left: 10px; */
+  margin-top: 50px;
+  width: 100%;
+}
+.like {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  width: 100%;
+
+  display: flex;
+}
+.btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: black;
+  border: none;
+  color: white;
+}
+.icon i,
+.btn {
+  align-items: space-between;
+}
+.note p {
+  font-size: 1.1em;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+  text-align: justify;
+  text-indent: 50px;
+  word-spacing: -1px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
